@@ -1,0 +1,41 @@
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.18.5:3000
+- Environments: .env
+✓ Ready in 324ms
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+
+ GET / 200 in 1051ms (next.js: 468ms, proxy.ts: 54ms, application-code: 528ms)
+No ANTHROPIC_API_KEY found, using mock provider
+⨯ TypeError: result.toDataStreamResponse is not a function
+    at POST (src/app/api/chat/route.ts:80:17)
+  78 |   });
+  79 |
+> 80 |   return result.toDataStreamResponse();
+     |                 ^
+  81 | }
+  82 |
+  83 | export const maxDuration = 120;
+ POST /api/chat 500 in 195ms (next.js: 78ms, proxy.ts: 4ms, application-code: 114ms)
+No ANTHROPIC_API_KEY found, using mock provider
+⨯ TypeError: result.toDataStreamResponse is not a function
+    at POST (src/app/api/chat/route.ts:80:17)
+  78 |   });
+  79 |
+> 80 |   return result.toDataStreamResponse();
+     |                 ^
+  81 | }
+  82 |
+  83 | export const maxDuration = 120;
+ POST /api/chat 500 in 90ms (next.js: 4ms, proxy.ts: 8ms, application-code: 79ms)
+ GET / 200 in 62ms (next.js: 4ms, proxy.ts: 6ms, application-code: 52ms)
+No ANTHROPIC_API_KEY found, using mock provider
+No ANTHROPIC_API_KEY found, using mock provider
+ POST /api/chat 200 in 12.5s (next.js: 58ms, proxy.ts: 5ms, application-code: 12.4s)
+ POST /api/chat 200 in 12.1s (next.js: 2ms, proxy.ts: 3ms, application-code: 12.1s)
+ GET / 200 in 47ms (next.js: 3ms, proxy.ts: 3ms, application-code: 42ms)
+No ANTHROPIC_API_KEY found, using mock provider
+ POST /api/chat 200 in 12.1s (next.js: 2ms, proxy.ts: 2ms, application-code: 12.1s)
+ GET / 200 in 55ms (next.js: 4ms, proxy.ts: 4ms, application-code: 48ms)
+No ANTHROPIC_API_KEY found, using mock provider
+ POST /api/chat 200 in 10.7s (next.js: 77ms, proxy.ts: 2ms, application-code: 10.7s)
